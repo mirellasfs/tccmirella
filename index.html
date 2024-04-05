@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+<!--posso escluir depois-->
+<title>Manipulação do DOM</title>
+<script>
+    let count = 0;
+
+    function incrementCount() {
+      count++;
+      document.getElementById("count-display").textContent = count;
+    }        
+
+</script>
+<!--posso escluir depois-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirella Makeup</title>
@@ -8,7 +22,7 @@
 </head>
 <body>
     <header>
-        <h1>Mirella Makeupo</h1>
+        <h1>Mirella Makeup</h1>
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
@@ -35,6 +49,12 @@
         </div>
         <!-- Outros produtos aqui -->
     </section>
+
+<!--posso escluir depois-->
+<h1>Manipulação do DOM</h1>
+<button onclick="incrementCount()">Clique Aqui</button>
+<p>Total de Cliques: <span id="count-display">0</span></p>
+<!--posso escluir depois-->
 
     <footer>
         <p>&copy; 2024 Mirella Makeup. Todos os direitos reservados.</p>
