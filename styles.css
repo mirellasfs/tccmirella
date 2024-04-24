@@ -88,3 +88,26 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*posso escluir depois*/
+/* Estilos para a tabela */
+#tabela {
+    margin-top: 20px; /* Espaçamento superior para separar da seção anterior */
+}
+
+#tabela h2 {
+    text-align: center; /* Centraliza o título da tabela */
+    margin-bottom: 20px; /* Adiciona espaço entre o título e a tabela */
+}
+
+#tabela table {
+    margin: 0 auto; /* Centraliza a tabela na página horizontalmente */
+    border-collapse: collapse; /* Remove espaçamento entre células */
+}
+
+#tabela th, #tabela td {
+    border: 1px solid #333; /* Borda sólida com cor preta */
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: center; /* Centraliza o conteúdo das células */
+}
+/*posso escluir depois*/
