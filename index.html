@@ -1,163 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-
-<!--posso escluir depois
-<title>Manipulação do DOM</title>
-<script>
-    let count = 0;
-
-    function incrementCount() {
-      count++;
-      document.getElementById("count-display").textContent = count;
-    }        
-
-</script>
-posso escluir depois-->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirella Makeup</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+  <title>Mirella</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-
 <body>
+  <!-- Barra de Navegação -->
+  <nav>
+    <div class="container">
+      <div class="logo">Mirella Makeup</div>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    
-    <section id="tabela">
-        <h2>Tabela Centralizada</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Coluna 1</td>
-                    <td>Coluna 2</td>
-                    <td>Coluna 3</td>
-                    <td>Coluna 4</td>
-                    <td>Coluna 5</td>
-                    <td>Coluna 6</td>
-                    <td>Coluna 7</td>
-                </tr>
-                <tr>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                    <td>Linha 1</td>
-                </tr>
-                <tr>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                    <td>Linha 2</td>
-                </tr>
-                <tr>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                    <td>Linha 3</td>
-                </tr>
-                <tr>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                    <td>Linha 4</td>
-                </tr>
-                <tr>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                    <td>Linha 5</td>
-                </tr>
-                <tr>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                    <td>Linha 6</td>
-                </tr>
-                <tr>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                    <td>Linha 7</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-   
+  <!-- Banner -->
+  <section class="banner">
+    <div class="container">
+      <h1>Descubra a sua beleza única</h1>
+      <p>Encontre os melhores produtos de maquiagem para realçar a sua beleza natural.</p>
+      <button>Compre Agora</button>
+    </div>
+  </section>
 
+  <!-- Seção de Produtos -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <h2>Nossos Produtos</h2>
+      <div class="produto">
+        <img src="https://i.postimg.cc/3NDVcW0Q/closeup-on-two-red-lipsticks-600nw-2216522133.webp" alt="Batom">
+        <h3>Batom</h3>
+        <p>Encontre uma variedade de cores para lábios irresistíveis.</p>
+      </div>
+      <div class="produto">
+        <img src="https://i.postimg.cc/ryxLjY10/paleta-de-sombras-charmosa-sp-colors-633-2-e082bd9898b7c8c74fb6512201a3f589.webp" alt="Paleta de Sombras">
+        <h3>Paleta de Sombras</h3>
+        <p>Crie looks incríveis com nossas paletas de sombras de alta qualidade.</p>
+      </div>
+      <!-- Mais produtos aqui -->
+    </div>
+  </section>
 
-    
-    <header>
-        <h1>Mirella Makeup</h1>
-        <nav>
-            <ul>
-                <body>
-                <button id="inicioButton">Início</button>
-
-    <script src="script.js"></script>
-                </body>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Dicas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="banner">
-        <div class="overlay"></div>
-        <h2>Descubra as melhores dicas e produtos de maquiagem</h2>
-        <p>Seja ousada, seja Mirella.</p>
-    </section>
-
-    <section id="produtos">
-        <h2>Produtos em Destaque</h2>
-        <div class="produto">
-            <img src="https://i.postimg.cc/cLDxw0c9/teste.jpg" alt="Nome do Produto">
-            <h3>Kit Essencial Glamour</h3>
-            <p>O "Kit Essencial Glamour" da Mirella Makeup é a escolha perfeita para quem busca versatilidade e sofisticação em sua rotina de maquiagem. Este conjunto exclusivo reúne uma variedade de itens essenciais cuidadosamente selecionados para proporcionar um acabamento impecável e deslumbrante em qualquer ocasião.</p>
-            <button>Comprar</button>
-        </div>
-        <!-- Outros produtos aqui -->
-    </section>
-
-<!--posso escluir depois
-<h1>Manipulação do DOM</h1>
-<button onclick="incrementCount()">Clique Aqui</button>
-<p>Total de Cliques: <span id="count-display">0</span></p>
-posso escluir depois-->
-
-<a href="https://mirellasfs.github.io/LayoutResponsivo/">Layout Responsivo</a>
+  <a href="https://mirellasfs.github.io/LayoutResponsivo/">Layout Responsivo</a>
 <a href="https://mirellasfs.github.io/ListadeTarefa/">Lista de Tarefas</a>
 <a href="https://mirellasfs.github.io/IntroducaoHTML/">Introdução HTML</a>
+<a href="https://mirellasfs.github.io/Tabela/">Tabela</a>
 
+  <!-- Rodapé -->
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <div class="logo">Mirella Makeup</div>
+      <div class="info">
+        <p>Telefone: (19) 98411-2947</p>
+        <p>Email: mirellasofiasemiao@gmail.com</p>
+        <p>Endereço: Av. Marginal, 1409 - Jardim Margarida, Cosmópolis</p>
+      </div>
+    </div>
+  </footer>
 
-
-    <footer>
-        <p>&copy; 2024 Mirella Makeup. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
