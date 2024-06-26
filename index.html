@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
   <title>Mirella</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .galeria a {
+      display: block;
+      width: 150px;
+      height: 150px;
+    }
+    .galeria img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
   <!-- Barra de Navegação -->
@@ -13,7 +31,6 @@
       <div class="logo">Mirella Makeup</div>
       <ul>
         <li><a href="#produtos">Produtos</a></li>
-        
         <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
@@ -32,24 +49,25 @@
   <section id="produtos" class="produtos">
     <div class="container">
       <h2>Nossos Produtos</h2>
-      <div class="produto">
-        <img src="https://i.postimg.cc/3NDVcW0Q/closeup-on-two-red-lipsticks-600nw-2216522133.webp" alt="Batom">
-        <h3>Batom</h3>
-        <p>Encontre uma variedade de cores para lábios irresistíveis.</p>
+      <div class="galeria">
+        <a href="pagina1.html">
+          <img src="https://i.postimg.cc/cHqNK3YM/61m-ZT1-H-r-OL-AC-UF894-1000-QL80.jpg" alt="Base">
+        </a>
+        <a href="pagina2.html">
+          <img src="https://i.postimg.cc/QxNZWhBP/1952533274cccc3c974.webp" alt="Corretivo">
+        </a>
+        <a href="pagina3.html">
+          <img src="https://i.postimg.cc/1t0bfjys/paleta-luxury-pillow-talk-charlotte-tilbury-4834-2-80845dd031cb956877f9eaf0f161864a.webp" alt="Paleta De Sombra">
+        </a>
+        <a href="pagina4.html">
+          <img src="https://i.postimg.cc/3NJfWrLF/7896032600850-good-times-1.webp" alt="Blush">
+        </a>
+        <a href="pagina5.html">
+          <img src="https://i.postimg.cc/tCcvCjFF/85450eb64f.webp" alt="Batom">
+        </a>
       </div>
-      <div class="produto">
-        <img src="https://i.postimg.cc/ryxLjY10/paleta-de-sombras-charmosa-sp-colors-633-2-e082bd9898b7c8c74fb6512201a3f589.webp" alt="Paleta de Sombras">
-        <h3>Paleta de Sombras</h3>
-        <p>Crie looks incríveis com nossas paletas de sombras de alta qualidade.</p>
-      </div>
-      <!-- Mais produtos aqui -->
     </div>
   </section>
-
-  <a href="https://mirellasfs.github.io/LayoutResponsivo/">Layout Responsivo</a>
-<a href="https://mirellasfs.github.io/ListadeTarefa/">Lista de Tarefas</a>
-<a href="https://mirellasfs.github.io/IntroducaoHTML/">Introdução HTML</a>
-<a href="https://mirellasfs.github.io/Tabela/">Tabela</a>
 
   <!-- Rodapé -->
   <footer id="contato" class="rodape">
@@ -66,3 +84,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
